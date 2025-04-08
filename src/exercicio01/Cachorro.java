@@ -1,3 +1,5 @@
+package exercicio01;
+
 public class Cachorro {
     private String nome;
     private String raca;
