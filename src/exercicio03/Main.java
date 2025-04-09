@@ -12,13 +12,8 @@ public class Main {
         funcionarios.add(new Funcionario("Ana", 3200));
 
         for (Funcionario funcionario : funcionarios) {
-            if (funcionario instanceof Gerente) {
-                ((Gerente) funcionario).exebirDados();
-            } else if(funcionario instanceof Vendedor) {
-                ((Vendedor) funcionario).exebirDados();
-            } else if(funcionario instanceof Funcionario) {
-                ((Funcionario) funcionario).exebirDados();
-            }
+            funcionario.exibirDados();
+            System.out.println();
         }
     }
 }

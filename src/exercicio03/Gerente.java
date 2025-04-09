@@ -13,7 +13,12 @@ public class Gerente extends Funcionario{
     }
 
     @Override
-    public double getSalarioBase() {
+    public double calcularSalario() {
         return super.getSalarioBase() + bonus;
+    }
+
+    @Override
+    public String getCargo() {
+        return "Gerente";
     }
 }

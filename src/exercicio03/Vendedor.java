@@ -8,12 +8,13 @@ public class Vendedor extends Funcionario {
         this.comissao = comissao;
     }
 
-    public Vendedor(double comissao) {
-        this.comissao = comissao;
+    @Override
+    public double calcularSalario() {
+        return super.getSalarioBase() + comissao;
     }
 
     @Override
-    public double getSalarioBase() {
-        return super.getSalarioBase() + comissao;
+    public String getCargo() {
+        return "Vendedor";
     }
 }

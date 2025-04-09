@@ -33,9 +33,13 @@ public class Funcionario {
         return salarioBase;
     }
 
-    public void exebirDados() {
+    public void exibirDados() {
         System.out.println("Nome: " + getNome() + "\n"
-        + "Salário Base: R$ " + getSalarioBase());
+        + "Salário Base: R$ " + calcularSalario() + "\n"
+        + "Cargo: " + getCargo());
+    }
 
+    public String getCargo() {
+        return "Funcionário";
     }
 }
